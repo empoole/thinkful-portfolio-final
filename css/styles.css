@@ -1,0 +1,132 @@
+/*
+ Black: #06080A;
+ White: #F9FEFF;
+ Grey: #3A4B5C;
+*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icons/icomoon.eot");
+  src: url("../icons/icomoon.eot#iefix") format("embedded-opentype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.svg#icomoon") format("svg"); }
+
+
+/*General Styles*/
+html,
+body {
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+	background-color: #F9FEFF;
+	color: #3A4B5C;
+}
+
+h1, h2, h3, h4, h5,
+.nav {
+	font-family: 'Oswald', Impact, Tahoma, sans-serif;
+	color: #06080A;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Center align*/
+.heading-about,
+.footer {
+	text-align: center;
+}
+
+
+/*Header*/
+.header {
+	padding: 0 5rem;
+}
+
+.header-name,
+.nav,
+ul li {
+	display: inline-block;
+}
+
+.nav {
+	float: right;
+	margin-top: 1rem;
+}
+
+.nav ul li {
+	padding: 5px 10px;
+}
+
+
+/*About*/
+.about-wrapper {
+	width: 55%;
+	margin: auto;
+}
+
+/*Projects*/
+.projects ul li {
+	margin: -3px -2px;
+}
+
+.info {
+	opacity: .85;
+	background-color: #06080A;
+	color: #F9FEFF;
+	width: 500px;
+	position: absolute;
+	text-align: center;
+	padding-top: 112px;
+	padding-bottom: 110px;
+}
+
+.info a:visited {
+	color: #F9FEFF;
+}
+
+/*Footer*/
+.footer {
+	background-color: #06080A;
+	padding-top: 2.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.copyright {
+	font-size: .85rem;
+}
+
+.social-media {
+	font-family: 'icomoon';
+	font-size: 1.25rem;
+	padding: 0;
+}
+
+.social-media li {
+	margin: 0 -2px;
+}
+
+.social-media a {
+	padding: 5px;
+	color: #3A4B5C;
+}
+
+.social-media a:visited {
+	color: #3A4B5C;
+}
+
+.social-media a:hover {
+	color: #F9FEFF;
+}
+
+.social-facebook::before {
+	content: "\e600";
+}
+
+.social-twitter::before {
+	content: "\e602";
+}
+
+.social-github::before {
+	content: "\e603";
+}
