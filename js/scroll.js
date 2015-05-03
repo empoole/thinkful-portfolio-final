@@ -5,5 +5,10 @@ $('#about-link').click(function(event) {
 
 $('#projects-link').click(function(event) {
 	event.preventDefault();
-	$('html, body').animate({scrollTop: $('#projects').offset.top + 'px'}, 'slow');
+	$('html, body').animate({scrollTop: $('#projects').offset().top + 'px'}, 'slow');
+});
+
+$('#contact-link').click(function(event) {
+	event.preventDefault();
+	$('html, body').animate({scrollTop: $('#contact').offset().top + 'px'}, 'slow');
 });

@@ -32,7 +32,7 @@ a {
 }
 
 /*Center align*/
-.heading-about,
+.heading,
 .footer {
 	text-align: center;
 }
@@ -41,6 +41,12 @@ a {
 /*Header*/
 .header {
 	padding: 0 5rem;
+	border-bottom: 1px solid #3A4B5C;
+	box-shadow: 0px 0px 1px 1px rgba(58, 75, 92, .5);
+}
+
+.header-name {
+	margin: .25em 0;
 }
 
 .header-name,
@@ -51,13 +57,24 @@ ul li {
 
 .nav {
 	float: right;
-	margin-top: 1rem;
+	margin-top: .25rem;
 }
 
 .nav ul li {
 	padding: 5px 10px;
 }
 
+.nav a {
+	color: #369;
+}
+
+.nav a:visited {
+	color: #369;
+}
+
+.nav a:hover {
+	color: #06080A;
+}
 
 /*About*/
 .about-wrapper {
