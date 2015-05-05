@@ -31,6 +31,22 @@
 		<h2 class="heading">Projects</h2>
 		<ul class="projects-list">
 			<li>
+				<a href="http://afsbenefits.com" target="_blank" id="afs">
+					<div class="info" id="info-afs">
+						Assocaited Financial Services website.
+					</div>
+					<img src="img/afs.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="http://empoole.github.io/spotify-artist-search/" target="_blank" id="spotify-app">
+					<div class="info" id="info-spotify-app">
+						Artist search app built with the Spotify API.
+					</div>
+					<img src="img/spotify-artist-search.jpg">
+				</a>
+			</li>
+			<li>
 				<a href="http://empoole.github.io/thinkful-shopping-list/" target="_blank" id="shopping-list">
 					<div class="info" id="info-shopping-list">
 						Shopping List app created for Thinkful.
@@ -47,27 +63,11 @@
 				</a>
 			</li>
 			<li>
-				<a href="http://empoole.github.io/spotify-artist-search/" target="_blank" id="spotify-app">
-					<div class="info" id="info-spotify-app">
-						Artist search app built with the Spotify API.
-					</div>
-					<img src="img/spotify-artist-search.jpg">
-				</a>
-			</li>
-			<li>
 				<a href="http://empoole.github.io/stackerAJAX/" target="_blank" id="stacker-AJAX">
 					<div class="info" id="info-stacker-AJAX">
 						StackOverflow Reputation Builder app. Design by Thinkful.
 					</div>
 					<img src="img/stackerAJAX.jpg">
-				</a>
-			</li>
-			<li>
-				<a href="http://empoole.github.io/fewd_landing_page_clone/" target="_blank" id="landing-page-clone">
-					<div class="info" id="info-landing-page">
-						Karma landing page clone.
-					</div>
-					<img src="img/karma-clone-preview.jpg">
 				</a>
 			</li>
 			<li></li>
@@ -78,7 +78,22 @@
 	</section>
 	<section class="contact" id="contact">
 		<h2 class="heading">Contact</h2>
+		<a href="#" class="btn-contact" id="open-contact-modal">Write to me.</a>
 	</section>
+	<div id="contact-lightbox" class="lightbox">
+		<div id="contact-modal" class="modal">
+			<button class="btn-close-modal" id="close-contact-modal">X</button>
+			<form>
+				<label for="contact-name">Name:</label>
+				<input type="text" placeholder="Your name" class="modal-text-input" id="contact-name">
+				<label for="contact-email">Email:</label>
+				<input type="text" placeholder="name@example.com" id="contact-email" class="modal-text-input">
+				<label for="contact-message">Message:</label>
+				<textarea placeholder="Type your message here." id="contact-message" class="modal-text-input"></textarea>
+				<button type="submit" class="btn-contact">Send.</button>
+			</form>
+		</div>
+	</div>
 	<footer class="footer">
 		<p class="copyright">&copy; 2015 Eric Poole</p>
 		<ul class="social-media">
@@ -89,5 +104,6 @@
 	</footer>
 	<script type="text/javascript" src="js/scroll.js"></script>
 	<script type="text/javascript" src="js/projects.js"></script>
+	<script type="text/javascript" src="js/contactModal.js"></script>
 </body>
 </html>

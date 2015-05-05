@@ -48,14 +48,14 @@ $('#stacker-AJAX').hover(function(event) {
 	$('#info-stacker-AJAX').hide();
 });
 
-$('#landing-page-clone').hover(function(event) {
+$('#afs').hover(function(event) {
 	event.preventDefault;
 	var imgOffset = $(this).position();
 	console.log(imgOffset);
-	$('#info-landing-page').position(imgOffset);
-	$('#info-landing-page').show();
+	$('#info-afs').position(imgOffset);
+	$('#info-afs').show();
 
 }, function(event) {
 	event.preventDefault();
-	$('#info-landing-page').hide();
+	$('#info-afs').hide();
 });
