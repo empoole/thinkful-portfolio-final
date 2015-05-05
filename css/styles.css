@@ -45,13 +45,22 @@ a {
 
 /*Header*/
 .header {
-	padding: 0 5rem;
 	border-bottom: 1px solid #3A4B5C;
 	box-shadow: 0px 0px 1px 1px rgba(58, 75, 92, .5);
+	position: fixed;
+	top: 0;
+	background-color: #F9FEFF;
+	width: 100%;
+	z-index: 10000;
 }
 
 .header-name {
-	margin: .25em 0;
+	margin: .35em 0;
+	margin-left: 5rem;
+}
+
+.nav {
+	margin-right: 5rem;
 }
 
 .header-name,
@@ -82,6 +91,10 @@ ul li {
 }
 
 /*About*/
+.about {
+	margin-top: 5.5rem;
+}
+
 .about-wrapper {
 	width: 55%;
 	margin: auto;
@@ -133,6 +146,7 @@ ul li {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(6,8,10,.7);
+	z-index: 20000;
 }
 
 /*Modal*/
