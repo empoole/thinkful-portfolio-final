@@ -1,8 +1,14 @@
 /*
+ Colors:
+ 
  Black: #06080A;
  White: #F9FEFF;
  Grey: #3A4B5C;
+ Red: #A64E48;
+ Darkred: #66302C;
 */
+
+
 @font-face {
   font-family: 'icomoon';
   src: url("../icons/icomoon.eot");
@@ -35,7 +41,8 @@ a {
 /*Center align*/
 .heading,
 .footer,
-.contact {
+.contact,
+.masthead {
 	text-align: center;
 }
 
@@ -43,8 +50,8 @@ a {
 	margin-bottom: 3rem;
 }
 
-/*Header*/
-.header {
+/*Navbar*/
+.navbar {
 	border-bottom: 1px solid #3A4B5C;
 	box-shadow: 0px 0px 1px 1px rgba(58, 75, 92, .5);
 	position: fixed;
@@ -54,7 +61,7 @@ a {
 	z-index: 10000;
 }
 
-.header-name {
+.navbar-name {
 	margin: .35em 0;
 	margin-left: 5rem;
 }
@@ -63,7 +70,7 @@ a {
 	margin-right: 5rem;
 }
 
-.header-name,
+.navbar-name,
 .nav,
 ul li {
 	display: inline-block;
@@ -90,17 +97,53 @@ ul li {
 	color: #06080A;
 }
 
+/*Masthead*/
+.masthead {
+	background: url('../img/background-mountain-trim.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+}
+
+.masthead-title {
+	font-size: 5rem;
+	text-shadow: 0px 4px #336699;
+	padding-top: 350px;
+	margin: 0;
+}
+
+.masthead-subtitle,
+.masthead-title {
+	color: #F9FEFF;
+}
+
+#scroll-arrow {
+	outline: 0;
+}
+
+#scroll-arrow::before {
+	font-family: "icomoon";
+	content: "\e604";
+	color: #F9FEFF;
+	font-size: 2rem;
+}
+
 /*About*/
 .about {
-	margin-top: 5.5rem;
+	margin: 5.5rem;
 }
 
 .about-wrapper {
-	width: 55%;
+	width: 45%;
 	margin: auto;
 }
 
 /*Projects*/
+.projects {
+	padding-bottom: 4rem;
+}
+
 .projects ul li {
 	margin: -3px -2px;
 }
@@ -122,7 +165,7 @@ ul li {
 
 /*Contact*/
 .contact {
-	padding: 4rem;
+	padding-bottom: 4rem;
 }
 
 .btn-contact {
@@ -136,6 +179,13 @@ ul li {
 
 .btn-contact:hover {
 	background-color: #3A4B5C;
+}
+
+.icon-quill::after {
+	font-family: 'icomoon';
+	content: "\e601";
+	font-size: 1.25rem;
+	padding-left: .5rem;
 }
 
 /*Lightbox*/
@@ -191,18 +241,27 @@ ul li {
 
 .btn-close-modal {
 	position: absolute;
-	top: 5px;
-	right: 5px;
-	background-color: #A64E48;
-	color: #FFFFFF;
-	font-weight: bold;
+	top: 0px;
+	right: 0px;
+	color: #A64E48;
+	background-color: rgba(249, 254, 255, 0);
+	font-size: 1.85rem;
 	border: none;
-	padding: 2px 7px;
-	font-family: 'Oswald', Impact, Tahoma, sans-serif;
 }
 
 .btn-close-modal:hover {
-	background-color: #66302C;
+	color: #66302C;
+}
+
+.btn-close-modal:focus {
+	color: #66302C;
+	outline: none;
+}
+
+.btn-close-modal::before {
+	font-family: 'icomoon';
+	content: "\e605";
+	margin-right: -4px;
 }
 
 /*Footer*/
