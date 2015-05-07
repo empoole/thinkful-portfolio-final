@@ -4,9 +4,9 @@ $(window).scroll(function() {
 	var bottomOfNavbar = $('.navbar').offset().top + $('.navbar').outerHeight();
 	var bottomOfAbout = $('.masthead').scrollTop() + $('.masthead').innerHeight();
 	if (bottomOfNavbar > bottomOfAbout) {
-		$('.navbar').fadeIn(850);
+		$('.navbar').slideDown('medium');
 	} else if (bottomOfNavbar < bottomOfAbout) {
-		$('.navbar').fadeOut(850);
+		$('.navbar').slideUp('medium');
 	}
 });
 

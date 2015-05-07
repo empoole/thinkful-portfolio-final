@@ -1,61 +1,57 @@
 $('.info').hide();
 
+
 $('#shopping-list').hover(function(event) {
 	event.preventDefault;
 	var imgOffset = $(this).position();
-	console.log(imgOffset);
 	$('#info-shopping-list').position(imgOffset);
-	$('#info-shopping-list').show();
+	$('#info-shopping-list').slideDown('medium');
 
 }, function(event) {
 	event.preventDefault();
-	$('#info-shopping-list').hide();
+	$('#info-shopping-list').slideUp('medium');
 });
 
 $('#author-quiz').hover(function(event) {
 	event.preventDefault;
 	var imgOffset = $(this).position();
-	console.log(imgOffset);
 	$('#info-author-quiz').position(imgOffset);
-	$('#info-author-quiz').show();
+	$('#info-author-quiz').slideDown('medium');
 
 }, function(event) {
 	event.preventDefault();
-	$('#info-author-quiz').hide();
+	$('#info-author-quiz').slideUp('medium');
 });
 
 $('#spotify-app').hover(function(event) {
 	event.preventDefault;
 	var imgOffset = $(this).position();
-	console.log(imgOffset);
 	$('#info-spotify-app').position(imgOffset);
-	$('#info-spotify-app').show();
+	$('#info-spotify-app').slideDown('medium');
 
 }, function(event) {
 	event.preventDefault();
-	$('#info-spotify-app').hide();
+	$('#info-spotify-app').slideUp('medium');
 });
 
 $('#stacker-AJAX').hover(function(event) {
 	event.preventDefault;
 	var imgOffset = $(this).position();
-	console.log(imgOffset);
 	$('#info-stacker-AJAX').position(imgOffset);
-	$('#info-stacker-AJAX').show();
+	$('#info-stacker-AJAX').slideDown('medium');
 
 }, function(event) {
 	event.preventDefault();
-	$('#info-stacker-AJAX').hide();
+	$('#info-stacker-AJAX').slideUp('medium');
 });
 
 $('#afs').hover(function(event) {
 	event.preventDefault;
 	var imgOffset = $(this).position();
-	console.log(imgOffset);
 	$('#info-afs').position(imgOffset);
-	$('#info-afs').show();
+	$('#info-afs').slideDown('medium');
 
 }, function(event) {
 	event.preventDefault();
-	$('#info-afs').hide();
+	$('#info-afs').slideUp('medium');
 });

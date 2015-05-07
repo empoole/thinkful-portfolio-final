@@ -103,6 +103,7 @@ ul li {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	height: 800px;
 }
 
@@ -116,17 +117,30 @@ ul li {
 .masthead-subtitle,
 .masthead-title {
 	color: #F9FEFF;
+	cursor: default;
 }
 
 #scroll-arrow {
 	outline: 0;
+	color: #F9FEFF;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-o-transition: color .5s;
 }
 
 #scroll-arrow::before {
 	font-family: "icomoon";
 	content: "\e604";
-	color: #F9FEFF;
 	font-size: 2rem;
+}
+
+#scroll-arrow:hover {
+	color: #06080A;
+	transition: color .5s;
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-o-transition: color .5s;
 }
 
 /*About*/
@@ -145,7 +159,7 @@ ul li {
 }
 
 .projects ul li {
-	margin: -3px -2px;
+	margin: -3px -1px 0px -2px;
 }
 
 .info {
@@ -156,7 +170,7 @@ ul li {
 	position: absolute;
 	text-align: center;
 	padding-top: 112px;
-	padding-bottom: 110px;
+	padding-bottom: 109px;
 }
 
 .info a:visited {
@@ -271,6 +285,26 @@ ul li {
 	padding-bottom: 1.5rem;
 }
 
+.footer a,
+.footer a:visited {
+	color: #3A4B5C;
+}
+
+.footer a {
+	transition: color .75s;
+	-webkit-transition: color .75s;
+	-mox-transition: color .75s;
+	-o-transition: color .75s;
+}
+
+.footer a:hover {
+	color: #F9FEFF;
+	transition: color .75s;
+	-webkit-transition: color .75s;
+	-mox-transition: color .75s;
+	-o-transition: color .75s;
+}
+
 .copyright {
 	font-size: .85rem;
 }
@@ -287,15 +321,6 @@ ul li {
 
 .social-media a {
 	padding: 5px;
-	color: #3A4B5C;
-}
-
-.social-media a:visited {
-	color: #3A4B5C;
-}
-
-.social-media a:hover {
-	color: #F9FEFF;
 }
 
 .social-facebook::before {
@@ -308,4 +333,8 @@ ul li {
 
 .social-github::before {
 	content: "\e603";
+}
+
+.fine-print {
+	font-size: .65rem;
 }
