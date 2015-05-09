@@ -2,11 +2,11 @@ $('.navbar').hide();
 
 $(window).scroll(function() {
 	var bottomOfNavbar = $('.navbar').offset().top + $('.navbar').outerHeight();
-	var bottomOfAbout = $('.masthead').scrollTop() + $('.masthead').innerHeight();
-	if (bottomOfNavbar > bottomOfAbout) {
-		$('.navbar').slideDown('medium');
-	} else if (bottomOfNavbar < bottomOfAbout) {
-		$('.navbar').slideUp('medium');
+	var topOfAbout = $('.masthead').scrollTop() + $('.masthead').innerHeight();
+	if (bottomOfNavbar >= topOfAbout) {
+		$('.navbar').fadeIn('medium');
+	} else if (bottomOfNavbar < topOfAbout) {
+		$('.navbar').fadeOut('medium');
 	}
 });
 

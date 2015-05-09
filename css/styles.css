@@ -26,7 +26,7 @@ body {
 h1, h2, h3, h4, h5,
 .nav,
 .btn-contact {
-	font-family: 'Oswald', Impact, Tahoma, sans-serif;
+	font-family: 'Oswald', Tahoma, sans-serif;
 	color: #06080A;
 }
 
@@ -97,6 +97,28 @@ ul li {
 	color: #06080A;
 }
 
+@media only screen and (max-width: 900px) {
+	.navbar-name {
+		margin-left: 1.25rem;
+	}
+
+	.nav {
+		margin-right: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.nav,
+	.navbar-name {
+		display: none;
+	}
+
+	.navbar {
+		box-shadow: none;
+		border: none;
+	}
+}
+
 /*Masthead*/
 .masthead {
 	background: url('../img/background-mountain-trim.jpg');
@@ -143,14 +165,52 @@ ul li {
 	-o-transition: color .5s;
 }
 
+@media only screen and (max-width: 600px) {
+	.masthead {
+		background: #336699;
+		height: 200px;
+	}
+
+	.masthead-title {
+		font-size: 2rem;
+		padding-top: 2rem;
+	}
+
+	#scroll-arrow {
+		display: none;
+	}
+}
+
 /*About*/
 .about {
 	margin: 5.5rem;
 }
 
 .about-wrapper {
-	width: 45%;
+	width: 50%;
 	margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.about { 
+		margin: 1.25rem;
+	}
+
+	.about-wrapper {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.about-wrapper {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.about-wrapper {
+		width: 70%;
+	}
 }
 
 /*Projects*/
@@ -158,9 +218,15 @@ ul li {
 	padding-bottom: 4rem;
 }
 
-.projects ul li {
-	margin: -3px -1px 0px -2px;
+.projects-list {
+	width: 1000px;
+	margin: auto;
 }
+
+.projects-list li {
+	margin: -4px -1px 0px -2px;
+}
+
 
 .info {
 	opacity: .85;
@@ -175,6 +241,16 @@ ul li {
 
 .info a:visited {
 	color: #F9FEFF;
+}
+
+@media only screen and (max-width: 1100px) {
+	.projects-list {
+		width: 500px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	
 }
 
 /*Contact*/
