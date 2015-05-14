@@ -55,3 +55,14 @@ $('#afs').hover(function(event) {
 	event.preventDefault();
 	$('#info-afs').hide();
 });
+
+$('#hot-or-cold').hover(function(event) {
+	event.preventDefault();
+	var imgOffset = $(this).position();
+	$('#info-hot-or-cold').position(imgOffset);
+	$('#info-hot-or-cold').show();
+
+}, function(event) {
+	event.preventDefault();
+	$('#info-hot-or-cold').hide();
+});

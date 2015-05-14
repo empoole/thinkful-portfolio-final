@@ -10,9 +10,12 @@
 
 
 @font-face {
+
   font-family: 'icomoon';
   src: url("../icons/icomoon.eot");
-  src: url("../icons/icomoon.eot#iefix") format("embedded-opentype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.svg#icomoon") format("svg"); }
+  src: url("../icons/icomoon.eot#iefix") format("embedded-opentype"), url("../icons/icomoon.woff") format("woff"), url("../icons/icomoon.ttf") format("truetype"), url("../icons/icomoon.svg#icomoon") format("svg"); 
+
+}
 
 
 /*General Styles*/
@@ -287,6 +290,8 @@ ul li {
 	height: 100%;
 	background-color: rgba(6,8,10,.7);
 	z-index: 20000;
+
+	display: none;
 }
 
 /*Modal*/
