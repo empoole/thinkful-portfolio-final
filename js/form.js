@@ -24,4 +24,6 @@ $('#contact-form').submit(function (event) {
 		$inputs.prop("disabled", false);
 		clearInputs();
 	});
+
+	$('#contact-lightbox').hide();
 });

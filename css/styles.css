@@ -246,6 +246,10 @@ ul li {
 	color: #F9FEFF;
 }
 
+.show-mobile {
+	display: none;
+}
+
 @media only screen and (max-width: 1100px) {
 	.projects-list {
 		width: 500px;
@@ -253,7 +257,30 @@ ul li {
 }
 
 @media only screen and (max-width: 600px) {
-	
+	.projects-list {
+		width: inherit;
+	}
+
+	.projects-list a img {
+		display: none;
+	}
+
+	.projects-list li a {
+		color: #336699;
+	}
+
+	.projects-list li a:visited {
+		color: #336699;
+	}
+
+	.projects-list li {
+		display: block;
+		padding: 5px 0;
+	}
+
+	.show-mobile {
+		display: inline-block;
+	}
 }
 
 /*Contact*/
@@ -303,8 +330,16 @@ ul li {
 	padding: 3rem;
 	padding-bottom: 4rem;
 	position: fixed;
-	top: 10rem;
-	left: 31.5%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 900px) {
+	.modal {
+		width: 70%;
+		margin: auto;
+	}
 }
 
 .modal form input,
