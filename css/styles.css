@@ -427,7 +427,7 @@ ul li {
 
 .social-media {
 	font-family: 'icomoon';
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	padding: 0;
 }
 
@@ -439,18 +439,37 @@ ul li {
 	padding: 5px;
 }
 
-.social-facebook::before {
-	content: "\e600";
+.social-linkedin::before {
+	content: "\e60c";
 }
 
-.social-twitter::before {
-	content: "\e602";
+.social-googleplus::before {
+	content: "\e60b";
 }
 
 .social-github::before {
-	content: "\e603";
+	content: "\e608";
 }
 
 .fine-print {
 	font-size: .65rem;
 }
+
+/* ICONS
+ *
+ * Quill = e601
+ * Arrow = e604
+ * Mail = e600
+ * Pencil = e602
+ * Feather = e603
+ * Cross = e605
+ * Flow-Branch = e606
+ * Arrow-small = e607
+ * Github = e608
+ * Twitter = e609
+ * Facebook = e60a
+ * Google+ = e60b
+ * Linkedin = e60c
+ * Dribble = e60d
+ *
+ */
